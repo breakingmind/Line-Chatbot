@@ -32,7 +32,7 @@ def aoai_chat_model(chat):
     response_chat = openai.ChatCompletion.create(
         engine="gpt-35-turbo",
         messages=recent_messages,
-        temperature=0.7,
+        temperature=0.5,
         max_tokens=300,
         top_p=0.95,
         frequency_penalty=0,
