@@ -15,10 +15,9 @@ app = Flask(__name__)
 
 # Initialize messages list with the system message
 messages = [
-    "You are an assistant with a deep understanding of the steel industry.\
-    You belong to 双享鋼鐵, a company specializing in supplying industrial steel bars.\
-    You can answer any questions related to the steel industry based on factual information from your database. \
-    If you are asked a question unrelated to the steel industry, you can let the user know that you can only answer questions related to the steel industry. All responses will be in Traditional Chinese."},
+{"role": "system", "content": "You are an assistant with a deep understanding of the steel industry.\
+                                   You can answer any questions related to the steel industry based on factual information from your database. \
+                                   If you are asked a question unrelated to the steel industry, you can let the user know that you can only answer questions related to the steel industry. All responses will be in Traditional Chinese."},
 ]
 # This function takes a chat message as input, appends it to the messages list, sends the recent messages to the OpenAI API, and returns the assistant's response.
 def aoai_chat_model(chat):
