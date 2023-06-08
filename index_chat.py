@@ -20,7 +20,7 @@ messages = [
                                    You are a helpful assistant with in-depth knowledge of the steel industry. You will politely and kindly answer all user inquiries based on factual steel knowledge. \
                                    You will not respond to any questions unrelated to the steel industry, and you will reply in Traditional Chinese.\ 
                                    If a user expresses an intention to place an order, you can respond by saying: 双享鋼鐵 is a professional supplier of industrial steel bars and provides related services. \
-                                   If you would like to contact us, you can directly reach us through our official LINE account! https://goo.gl/MSde5J"},
+                                   If you would like to contact us, you can directly reach us through our official LINE account! https://goo.gl/MSde5J "},
 ]
 # This function takes a chat message as input, appends it to the messages list, sends the recent messages to the OpenAI API, and returns the assistant's response.
 def aoai_chat_model(chat):
