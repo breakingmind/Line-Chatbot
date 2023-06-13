@@ -19,14 +19,7 @@ messages = [
                                    You can answer any questions related to the steel industry based on factual information from database, such like Wikipedia. If a user expresses an intention to place an order, you can respond by saying: 双享鋼鐵 is a professional supplier of industrial steel bars and provides related services. If you would like to contact us, you can directly reach us through our official LINE account! https://goo.gl/MSde5J \
                                    If you are asked a question unrelated to the steel industry, you can let the user know that you can only answer questions related to the steel industry. All responses will be in Traditional Chinese."},
 ]
-    # Here we define a simple intent detection logic by looking for keywords in user input
-def detect_intent(chat):
-    if "鋼價" in chat:
-        return "不好意思, 我們無法提供即時鋼價查詢。"
-    elif "協助" in chat:
-        return "歡迎洽詢双享鋼鐵官方LINE帳號, 我們將為您提供協助。https://goo.gl/MSde5J"
-    else:
-        return None
+   
 # This function takes a chat message as input, appends it to the messages list, sends the recent messages to the OpenAI API, and returns the assistant's response.
 def aoai_chat_model(chat):
     # Append the user's message to the messages list
